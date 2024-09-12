@@ -6,19 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aman Digital Clock</title>
 
-    <link rel="stylesheet" href="index.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
 
-<body class="w-[100%] h-[100vh] flex items-center justify-center flex-col bg-blue-300">
+<body class="w-full h-screen flex flex-col items-center justify-center bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500">
     <!-- Digital Clock -->
-    <h1 class="text-3xl capitalize text-center my-5 font-bold text-white">digital clock</h1>
+    <h1 class="text-5xl capitalize text-center my-5 font-extrabold text-white tracking-wider">Digital Clock</h1>
 
-    <div class="container w-[40vw] rounded-xl h-[40vh] mx-auto gap-10 bg-gray-100 flex items-center justify-center">
-        <div id="hrs" class="bg-blue-300 p-5 text-2xl rounded-full">
-        </div>:
-        <div id="min" class="bg-blue-300 p-5 text-2xl rounded-full">
-        </div>:
-        <div id="sec" class="bg-blue-300 p-5 text-2xl rounded-full">
+    <div class="container w-[50vw] h-[40vh] rounded-xl shadow-xl bg-white/20 backdrop-blur-md flex items-center justify-center gap-5 px-10 py-5">
+        <div id="hrs" class="bg-white bg-opacity-50 p-8 text-5xl font-bold rounded-lg text-gray-800 shadow-md">
+        </div>
+        <span class="text-5xl text-white font-bold">:</span>
+        <div id="min" class="bg-white bg-opacity-50 p-8 text-5xl font-bold rounded-lg text-gray-800 shadow-md">
+        </div>
+        <span class="text-5xl text-white font-bold">:</span>
+        <div id="sec" class="bg-white bg-opacity-50 p-8 text-5xl font-bold rounded-lg text-gray-800 shadow-md">
         </div>
     </div>
 
